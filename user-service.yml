@@ -27,3 +27,12 @@ eureka:
       defaultZone: http://localhost:8761/eureka/
 testing:
   property: testing1
+
+management:
+  security:
+    enabled: false
+  endpoints:
+    web:
+      exposure:
+        include: 
+          -"*"
